@@ -1,0 +1,13 @@
+{%extends "base.html"%} {% block content %} {% for gang, data in invest.items %}
+{%if name == gang %}
+<body class="char_background">
+  <h1 class="char_head">{{ data.char }}</h1>
+  <section class="text_style">
+    <h2>About Them</h2>
+    <p>{{data.description}}</p>
+    <p>{{data.ability}}</p>
+    <br />
+    <a href="{% url 'characters'%}">Characters</a>
+    {% endif %} {%endfor%} {%endblock content%}
+  </section>
+</body>

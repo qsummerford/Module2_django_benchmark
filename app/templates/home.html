@@ -1,0 +1,10 @@
+{%extends "base.html" %} {%block content%}
+<body class="background">
+  <h1 class="header_style">Choose a Character From Mystery Inc.!</h1>
+  {%for gangs in gang%}
+  <nav class="link_box">
+    <a href="{{gangs}}/" class="link_style">{{gangs}}</a>
+  </nav>
+  <br />
+  {%endfor%} {%endblock content%}
+</body>
